@@ -43,7 +43,7 @@ Before using the script, ensure you have the following:
    Ensure the script has executable permissions.
 
    ```bash
-   chmod +x security_audit_and_hardening.sh
+   chmod +x Technical_Task_Set2.sh
 
 ### Configurable
 
@@ -68,7 +68,7 @@ Before using the script, ensure you have the following:
 To perform a comprehensive security audit of your server:
 
   ```bash
-sudo ./security_audit_and_hardening.sh audit
+sudo ./Technical_Task_Set2.sh audit
 ```
 This audit checks users, permissions, services, firewall settings, network configurations, logs, and updates and then generates a report at `/var/log/security_audit_report.log`.
 
@@ -76,14 +76,14 @@ This audit checks users, permissions, services, firewall settings, network confi
 To apply security hardening measures to your server:
 
   ```bash
-sudo ./security_audit_and_hardening.sh harden
+sudo ./Technical_Task_Set2.sh harden
 ```
 Hardening disables root SSH login, disables IPv6, secures the bootloader, configures the firewall, and sets up automatic updates and also logs the hardening process at `/var/log/hardening_process.log`.
 
 **To perform both a security audit and system hardening:**
 
   ```bash
-sudo ./security_audit_and_hardening.sh audit && sudo ./security_audit_and_hardening.sh harden
+sudo ./Technical_Task_Set2.sh.sh audit && sudo ./Technical_Task_Set2.sh.sh harden
 ```
 
 ### Extending the Script
